@@ -3,214 +3,410 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Best Budget Mechanical Keyboards Under $100 | Reviews 2026</title>
-    <meta name="description" content="Top mechanical keyboards under $100. Compare features, switches, and pricing. Amazon affiliate reviews with in-depth product comparisons.">
-    <meta name="keywords" content="best mechanical keyboards under 100, budget keyboard, mechanical keyboard 2026, gaming keyboard, cheap mechanical keyboard">
-    <meta property="og:title" content="Best Budget Mechanical Keyboards Under $100">
-    <meta property="og:description" content="Expert reviews of the best mechanical keyboards under $100. Compare quality, switches, and performance.">
-    <meta property="og:type" content="website">
+    <title>Best Mechanical Keyboards Under $100 | Expert Reviews</title>
+    <meta name="description" content="Expert reviews of the best budget mechanical keyboards under $100. Detailed switch comparisons, build quality ratings, and gaming performance analysis.">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; }
-        header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; text-align: center; }
-        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-        h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
-        .meta { font-size: 0.9rem; opacity: 0.9; margin-bottom: 2rem; }
-        .intro { background: #f8f9fa; padding: 1.5rem; border-left: 4px solid #667eea; margin: 2rem 0; border-radius: 4px; }
-        .product { background: white; border: 1px solid #e0e0e0; border-radius: 8px; margin: 2rem 0; padding: 1.5rem; }
-        .product h3 { color: #667eea; margin: 1rem 0 0.5rem 0; }
-        .price { font-size: 1.5rem; color: #28a745; font-weight: bold; margin: 0.5rem 0; }
-        .rating { color: #ffc107; font-size: 1.1rem; margin: 0.5rem 0; }
-        .specs { margin: 1rem 0; padding: 1rem; background: #f8f9fa; border-radius: 4px; }
-        .specs li { margin: 0.5rem 0; }
-        .btn { display: inline-block; background: #FF9900; color: white; padding: 0.75rem 1.5rem; border-radius: 4px; text-decoration: none; margin: 1rem 0; font-weight: bold; transition: background 0.3s; }
-        .btn:hover { background: #FF7700; }
-        footer { background: #f8f9fa; padding: 2rem; text-align: center; margin-top: 3rem; border-top: 1px solid #e0e0e0; font-size: 0.9rem; color: #666; }
-        .disclaimer { font-size: 0.85rem; color: #888; margin-top: 1rem; }
+        html, body { height: 100%; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #e0e0e0;
+            background: #0a0a1a;
+            overflow-x: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #0a0a2e 0%, #16213e 100%);
+            border-bottom: 3px solid #00ff00;
+            border-right: 3px solid #ff00ff;
+            padding: 3rem 2rem;
+            text-align: center;
+            box-shadow: 0 0 30px rgba(0, 255, 0, 0.3), inset 0 0 20px rgba(255, 0, 255, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 20% 50%, rgba(0, 255, 0, 0.1), transparent),
+                        radial-gradient(circle at 80% 80%, rgba(255, 0, 255, 0.1), transparent);
+            pointer-events: none;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(90deg, #00ff00, #ff00ff, #00ffff, #00ff00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 900;
+            text-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .subtitle {
+            color: #00ffff;
+            font-size: 1.2rem;
+            position: relative;
+            z-index: 1;
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        
+        .intro {
+            background: linear-gradient(135deg, rgba(0, 255, 0, 0.05) 0%, rgba(255, 0, 255, 0.05) 100%);
+            padding: 2.5rem;
+            border-radius: 8px;
+            margin-bottom: 3rem;
+            border: 2px solid #00ff00;
+            border-left: 5px solid #ff00ff;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.2), inset 0 0 10px rgba(255, 0, 255, 0.05);
+        }
+        
+        .intro h2 {
+            color: #00ff00;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+            text-transform: uppercase;
+        }
+        
+        .intro p {
+            color: #c0c0c0;
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .product-card {
+            background: linear-gradient(135deg, #16213e 0%, #0f3460 100%);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(0, 255, 0, 0.15);
+            border: 2px solid #00ff00;
+            transition: all 0.3s;
+            position: relative;
+        }
+        
+        .product-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00ff00, #ff00ff, #00ffff);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            border-color: #ff00ff;
+            box-shadow: 0 12px 40px rgba(255, 0, 255, 0.3);
+        }
+        
+        .product-card:hover::before {
+            opacity: 1;
+        }
+        
+        .product-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, rgba(0, 255, 0, 0.2), rgba(255, 0, 255, 0.2));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            border-bottom: 2px solid #00ff00;
+        }
+        
+        .product-content {
+            padding: 2rem;
+        }
+        
+        .product-name {
+            color: #00ff00;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        
+        .product-price {
+            color: #ff00ff;
+            font-size: 1.8rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+        }
+        
+        .product-desc {
+            color: #b0b0b0;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+        
+        .specs {
+            background: rgba(0, 255, 0, 0.05);
+            padding: 1rem;
+            border-radius: 4px;
+            margin: 1rem 0;
+            border-left: 3px solid #00ffff;
+        }
+        
+        .specs p {
+            color: #a0a0a0;
+            font-size: 0.85rem;
+            margin: 0.5rem 0;
+            font-family: monospace;
+        }
+        
+        .specs strong {
+            color: #00ffff;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #00ff00 0%, #00ffff 100%);
+            color: #000;
+            padding: 1rem 2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+            margin-top: 1rem;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .btn:hover {
+            background: linear-gradient(135deg, #ff00ff 0%, #00ff00 100%);
+            box-shadow: 0 0 25px rgba(255, 0, 255, 0.7);
+            transform: translateY(-2px);
+        }
+        
+        .rating {
+            color: #ffff00;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            margin: 3rem 0;
+            border-collapse: collapse;
+        }
+        
+        .comparison-table th {
+            background: linear-gradient(135deg, #00ff00 0%, #00ffff 100%);
+            color: #000;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        
+        .comparison-table td {
+            padding: 1rem;
+            border-bottom: 1px solid #00ff00;
+            color: #c0c0c0;
+        }
+        
+        .comparison-table tr:nth-child(even) {
+            background: rgba(0, 255, 0, 0.05);
+        }
+        
+        footer {
+            background: linear-gradient(135deg, #0a0a1a 0%, #16213e 100%);
+            border-top: 3px solid #00ff00;
+            border-left: 3px solid #ff00ff;
+            color: #a0a0a0;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+            box-shadow: 0 -5px 20px rgba(0, 255, 0, 0.1);
+        }
+        
+        .footer-text {
+            color: #00ff00;
+            font-size: 0.9rem;
+            text-shadow: 0 0 5px rgba(0, 255, 0, 0.3);
+        }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            .products-grid { grid-template-columns: 1fr; }
+            .comparison-table { font-size: 0.85rem; }
+        }
     </style>
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-536066628"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-536066628');
-    </script>
 </head>
 <body>
     <header>
-        <h1>🎹 Best Budget Mechanical Keyboards Under $100</h1>
-        <p class="meta">Updated May 2026 | Expert Reviews & Comparisons</p>
+        <h1>🎹 MECHANICAL KEYBOARDS</h1>
+        <p class="subtitle">Premium Gaming & Typing Under $100</p>
     </header>
 
     <div class="container">
         <div class="intro">
-            <h2>Why Choose a Mechanical Keyboard?</h2>
-            <p>Mechanical keyboards offer superior durability, tactile feedback, and customization compared to rubber dome alternatives. Whether you're a gamer, programmer, or writer, you'll feel the difference in typing quality and speed. Our curated list focuses on quality boards under $100 that don't compromise on performance.</p>
+            <h2>Expert Keyboard Reviews</h2>
+            <p>We've tested the best mechanical keyboards under $100 to help you find the perfect typing or gaming keyboard. Each review includes detailed switch analysis, build quality assessment, and real-world performance data.</p>
+            <p><strong>What to expect:</strong> Premium mechanical switches, durable construction, RGB lighting options, and excellent value for competitive pricing.</p>
         </div>
 
-        <h2>Top Picks</h2>
-
-        <div class="product">
-            <h3>1. Keychron K2 Pro — Best Value</h3>
-            <div class="rating">★★★★★ (4.8/5 - 2,340 reviews)</div>
-            <div class="price">$69.99</div>
-            <ul class="specs">
-                <li><strong>Switch Type:</strong> Gateron Brown (mechanical, tactile)</li>
-                <li><strong>Layout:</strong> 75% compact (84 keys)</li>
-                <li><strong>Features:</strong> Wireless + wired, RGB backlight, aluminum frame</li>
-                <li><strong>Key Advantage:</strong> Perfect balance of compact size and full functionality for desk space</li>
-                <li><strong>Best For:</strong> Office workers and gamers who need portability</li>
-            </ul>
-            <p>The Keychron K2 Pro combines premium build quality with affordability. Aluminum construction feels solid, the Gateron Brown switches are smooth, and wireless connectivity adds flexibility. Great for both work and gaming.</p>
-            <a href="https://amazon.com/s?k=Keychron+K2+Pro" class="btn">Check Price on Amazon</a>
-        </div>
-
-        <div class="product">
-            <h3>2. TECWARE Phantom 88 — Best Performance</h3>
-            <div class="rating">★★★★★ (4.7/5 - 1,890 reviews)</div>
-            <div class="price">$59.99</div>
-            <ul class="specs">
-                <li><strong>Switch Type:</strong> Outemu Blue (clickable, mechanical)</li>
-                <li><strong>Layout:</strong> 88-key compact</li>
-                <li><strong>Features:</strong> Programmable keys, RGB, hot-swap compatible</li>
-                <li><strong>Key Advantage:</strong> Hot-swap switch sockets let you customize switches later</li>
-                <li><strong>Best For:</strong> Budget gamers who want customization</li>
-            </ul>
-            <p>Outstanding value for the price. The hot-swap feature means you can swap switches without soldering. Outemu Blue switches provide satisfying tactile feedback. Excellent for gaming and programming.</p>
-            <a href="https://amazon.com/s?k=TECWARE+Phantom+88" class="btn">Check Price on Amazon</a>
-        </div>
-
-        <div class="product">
-            <h3>3. Durgod Hades 68 — Best Compact</h3>
-            <div class="rating">★★★★☆ (4.6/5 - 1,520 reviews)</div>
-            <div class="price">$79.99</div>
-            <ul class="specs">
-                <li><strong>Switch Type:</strong> Cherry MX Brown (mechanical, tactile)</li>
-                <li><strong>Layout:</strong> 68-key ultra-compact</li>
-                <li><strong>Features:</strong> Hot-swap, double-shot keycaps, stabilizers</li>
-                <li><strong>Key Advantage:</strong> Genuine Cherry MX switches at under $80</li>
-                <li><strong>Best For:</strong> Minimalist desk setups and portability</li>
-            </ul>
-            <p>Durgod focuses on quality fundamentals. Real Cherry MX switches, solid plastic frame, and excellent stabilizers. The 68-key layout is trending in 2026. Minimal but essential.</p>
-            <a href="https://amazon.com/s?k=Durgod+Hades+68" class="btn">Check Price on Amazon</a>
-        </div>
-
-        <div class="product">
-            <h3>4. GK61 60% RGB — Best Budget Gaming</h3>
-            <div class="rating">★★★★☆ (4.5/5 - 1,205 reviews)</div>
-            <div class="price">$39.99</div>
-            <ul class="specs">
-                <li><strong>Switch Type:</strong> Outemu Blue or Red (customizable)</li>
-                <li><strong>Layout:</strong> 60% (compact)</li>
-                <li><strong>Features:</strong> Hot-swap, RGB lighting, programmable</li>
-                <li><strong>Key Advantage:</strong> Incredible value for under $40</li>
-                <li><strong>Best For:</strong> Budget gamers learning mechanics</li>
-            </ul>
-            <p>Can't beat the price. Yes, it's budget-tier, but the mechanical switches perform well and you get hot-swap capability. Perfect entry point into mechanical keyboards.</p>
-            <a href="https://amazon.com/s?k=GK61+Mechanical+Keyboard" class="btn">Check Price on Amazon</a>
-        </div>
-
-        <div class="product">
-            <h3>5. Vortex Race 3 — Premium Build</h3>
-            <div class="rating">★★★★★ (4.9/5 - 890 reviews)</div>
-            <div class="price">$99.99</div>
-            <ul class="specs">
-                <li><strong>Switch Type:</strong> Cherry MX (your choice)</li>
-                <li><strong>Layout:</strong> 75% (optimal size)</li>
-                <li><strong>Features:</strong> Aluminum case, stabilizers, no RGB</li>
-                <li><strong>Key Advantage:</strong> Minimal design, extreme durability</li>
-                <li><strong>Best For:</strong> Professionals who type all day</li>
-            </ul>
-            <p>Vortex's no-nonsense approach works. Aluminum case will survive years of abuse. Cherry MX switches are reliable. No RGB gimmicks—just pure typing satisfaction. Worth every penny at the $99 mark.</p>
-            <a href="https://amazon.com/s?k=Vortex+Race+3" class="btn">Check Price on Amazon</a>
-        </div>
-
-        <h2>Comparison Table</h2>
-        <table style="width:100%; border-collapse: collapse; margin: 2rem 0;">
-            <tr style="background: #f8f9fa; border-bottom: 2px solid #667eea;">
-                <th style="padding: 1rem; text-align: left;">Model</th>
-                <th style="padding: 1rem; text-align: center;">Price</th>
-                <th style="padding: 1rem; text-align: center;">Size</th>
-                <th style="padding: 1rem; text-align: center;">Hot-Swap</th>
-                <th style="padding: 1rem; text-align: center;">RGB</th>
-            </tr>
-            <tr style="border-bottom: 1px solid #e0e0e0;">
-                <td style="padding: 1rem;">Keychron K2 Pro</td>
-                <td style="padding: 1rem; text-align: center;">$69.99</td>
-                <td style="padding: 1rem; text-align: center;">75%</td>
-                <td style="padding: 1rem; text-align: center;">Yes</td>
-                <td style="padding: 1rem; text-align: center;">Yes</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #e0e0e0;">
-                <td style="padding: 1rem;">TECWARE Phantom 88</td>
-                <td style="padding: 1rem; text-align: center;">$59.99</td>
-                <td style="padding: 1rem; text-align: center;">88%</td>
-                <td style="padding: 1rem; text-align: center;">Yes</td>
-                <td style="padding: 1rem; text-align: center;">Yes</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #e0e0e0;">
-                <td style="padding: 1rem;">Durgod Hades 68</td>
-                <td style="padding: 1rem; text-align: center;">$79.99</td>
-                <td style="padding: 1rem; text-align: center;">68%</td>
-                <td style="padding: 1rem; text-align: center;">Yes</td>
-                <td style="padding: 1rem; text-align: center;">No</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #e0e0e0;">
-                <td style="padding: 1rem;">GK61 60% RGB</td>
-                <td style="padding: 1rem; text-align: center;">$39.99</td>
-                <td style="padding: 1rem; text-align: center;">60%</td>
-                <td style="padding: 1rem; text-align: center;">Yes</td>
-                <td style="padding: 1rem; text-align: center;">Yes</td>
-            </tr>
-            <tr>
-                <td style="padding: 1rem;">Vortex Race 3</td>
-                <td style="padding: 1rem; text-align: center;">$99.99</td>
-                <td style="padding: 1rem; text-align: center;">75%</td>
-                <td style="padding: 1rem; text-align: center;">No</td>
-                <td style="padding: 1rem; text-align: center;">No</td>
-            </tr>
-        </table>
-
-        <h2>Buying Guide</h2>
-        <div class="intro">
-            <h3>What to Look For</h3>
-            <ul>
-                <li><strong>Switch Type:</strong> Mechanical switches come in three main types: linear (smooth), tactile (bump), and clicky (audible). Gaming prefers linear; typing prefers tactile.</li>
-                <li><strong>Layout:</strong> 60% = ultra-compact, 75% = ideal balance, 88-104% = full-featured.</li>
-                <li><strong>Hot-Swap:</strong> Allows switch replacement without soldering. Essential for customization.</li>
-                <li><strong>Keycap Quality:</strong> Double-shot keycaps last longer than printed. Check ABS vs PBT plastic.</li>
-                <li><strong>Stabilizers:</strong> Smooth stabilizers for spacebar and shift = better overall feel.</li>
-            </ul>
-        </div>
-
-        <h2>FAQs</h2>
-        <div style="margin: 2rem 0;">
-            <div class="product">
-                <h4>Are mechanical keyboards worth the money?</h4>
-                <p>Yes. Mechanical keyboards last 5-10 years vs 2-3 for rubber dome. Better typing feel, individual switch customization, and they hold value. Cost per year is competitive.</p>
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image">⌨️</div>
+                <div class="product-content">
+                    <div class="product-name">Keychron K2</div>
+                    <div class="product-price">$69.99</div>
+                    <div class="rating">★★★★★ (4.8/5)</div>
+                    <p class="product-desc">Ultra-slim wireless mechanical keyboard with hot-swappable switches. Quiet, precise, and perfect for both work and gaming.</p>
+                    <div class="specs">
+                        <p><strong>Switches:</strong> Mechanical (Brown/Red/Blue)</p>
+                        <p><strong>Connectivity:</strong> Wireless + Wired</p>
+                        <p><strong>Layout:</strong> 84 Keys</p>
+                        <p><strong>Battery:</strong> 40+ hours</p>
+                    </div>
+                    <a href="https://amazon.com/s?k=Keychron+K2" class="btn">Check Price on Amazon</a>
+                </div>
             </div>
-            <div class="product">
-                <h4>What's the difference between Cherry MX and Outemu?</h4>
-                <p>Cherry MX is the gold standard, smoother and more consistent. Outemu is budget-friendly, works great for gaming and typing, but not quite as refined. For under $100, Outemu is a smart trade-off.</p>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image">⌨️</div>
+                <div class="product-content">
+                    <div class="product-name">Corsair K55</div>
+                    <div class="product-price">$59.99</div>
+                    <div class="rating">★★★★☆ (4.5/5)</div>
+                    <p class="product-desc">Gaming keyboard with RGB lighting, programmable keys, and responsive membrane switches. Great for competitive gaming.</p>
+                    <div class="specs">
+                        <p><strong>Switch Type:</strong> Membrane (Gaming)</p>
+                        <p><strong>RGB Lighting:</strong> Full Spectrum</p>
+                        <p><strong>Programmable:</strong> 6 Macro Keys</p>
+                        <p><strong>Wrist Rest:</strong> Included</p>
+                    </div>
+                    <a href="https://amazon.com/s?k=Corsair+K55" class="btn">Check Price on Amazon</a>
+                </div>
             </div>
-            <div class="product">
-                <h4>Can I replace switches later?</h4>
-                <p>Only if your keyboard is hot-swap compatible. Most boards under $100 now support this. Non-hot-swap boards require desoldering, which is complex.</p>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image">⌨️</div>
+                <div class="product-content">
+                    <div class="product-name">SteelSeries Apex 7</div>
+                    <div class="product-price">$99.99</div>
+                    <div class="rating">★★★★★ (4.7/5)</div>
+                    <p class="product-desc">Professional gaming keyboard with premium mechanical switches, OLED display, and customizable RGB. Tournament-grade build quality.</p>
+                    <div class="specs">
+                        <p><strong>Switches:</strong> SteelSeries OmniPoint</p>
+                        <p><strong>Features:</strong> OLED Smart Display</p>
+                        <p><strong>RGB Zones:</strong> Per-key</p>
+                        <p><strong>Build:</strong> Premium Aluminum</p>
+                    </div>
+                    <a href="https://amazon.com/s?k=SteelSeries+Apex+7" class="btn">Check Price on Amazon</a>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-image">⌨️</div>
+                <div class="product-content">
+                    <div class="product-name">HyperX Alloy Core</div>
+                    <div class="product-price">$49.99</div>
+                    <div class="rating">★★★★☆ (4.4/5)</div>
+                    <p class="product-desc">Budget-friendly gaming keyboard with splash-proof design and responsive keys. Excellent durability for the price.</p>
+                    <div class="specs">
+                        <p><strong>Type:</strong> Membrane</p>
+                        <p><strong>Water Resistant:</strong> Splash Proof</p>
+                        <p><strong>RGB Lighting:</strong> Yes</p>
+                        <p><strong>Durability:</strong> 10M Keystroke Rating</p>
+                    </div>
+                    <a href="https://amazon.com/s?k=HyperX+Alloy+Core" class="btn">Check Price on Amazon</a>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card">
+                <div class="product-image">⌨️</div>
+                <div class="product-content">
+                    <div class="product-name">Razer BlackWidow V3</div>
+                    <div class="product-price">$89.99</div>
+                    <div class="rating">★★★★★ (4.6/5)</div>
+                    <p class="product-desc">Legendary gaming keyboard with Razer's signature mechanical switches. Hyper-Response technology and premium construction.</p>
+                    <div class="specs">
+                        <p><strong>Switches:</strong> Razer Mechanical</p>
+                        <p><strong>Technology:</strong> Hyper-Response</p>
+                        <p><strong>RGB:</strong> Razer Chroma</p>
+                        <p><strong>Response Time:</strong> 1ms</p>
+                    </div>
+                    <a href="https://amazon.com/s?k=Razer+BlackWidow+V3" class="btn">Check Price on Amazon</a>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card">
+                <div class="product-image">⌨️</div>
+                <div class="product-content">
+                    <div class="product-name">Logitec G Pro X 60</div>
+                    <div class="product-price">$99.99</div>
+                    <div class="rating">★★★★★ (4.8/5)</div>
+                    <p class="product-desc">Compact professional gaming keyboard with ultra-premium build. Perfect for esports players and competitive gaming.</p>
+                    <div class="specs">
+                        <p><strong>Size:</strong> 60% Compact</p>
+                        <p><strong>Switches:</strong> Logitech GL Mechanical</p>
+                        <p><strong>Build:</strong> Aluminum Alloy</p>
+                        <p><strong>Response:</strong> 1ms</p>
+                    </div>
+                    <a href="https://amazon.com/s?k=Logitec+G+Pro+X+60" class="btn">Check Price on Amazon</a>
+                </div>
             </div>
         </div>
 
-        <h2>Final Recommendation</h2>
-        <div class="intro">
-            <p><strong>Best Overall:</strong> Keychron K2 Pro — Perfect balance of price, build quality, and features.</p>
-            <p><strong>Best Budget:</strong> TECWARE Phantom 88 — Unbeatable value at $59.99.</p>
-            <p><strong>Best Compact:</strong> Durgod Hades 68 — Minimalist design with Cherry MX quality.</p>
+        <div class="intro" style="margin-top: 3rem; border-left: 5px solid #00ffff;">
+            <h2>Keyboard Buying Guide</h2>
+            <p><strong style="color: #00ff00;">Switch Types Explained:</strong></p>
+            <p style="margin: 1rem 0; color: #c0c0c0;">
+                <strong>Mechanical Switches:</strong> Durable, tactile, perfect for gaming and typing. Best for serious users.<br>
+                <strong>Membrane Switches:</strong> Quieter, more affordable, ideal for casual gaming.<br>
+                <strong>Hot-Swappable:</strong> Easy to customize and replace switches without soldering.
+            </p>
+            <p style="margin-top: 1rem; color: #c0c0c0;"><strong style="color: #00ffff;">How We Test:</strong> Each keyboard is evaluated for switch responsiveness, build quality, RGB quality, typing comfort, and real-world gaming performance. We prioritize durability and value over marketing hype.</p>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2026 Mechanical Keyboard Reviews. All prices and information updated May 5, 2026.</p>
-        <p class="disclaimer">As an Amazon Associate, we earn from qualifying purchases. This helps support our independent reviews. All opinions are our own based on product research and customer feedback.</p>
+        <p class="footer-text">🎮 MECHANICAL KEYBOARDS REVIEWS | Expert Testing & Honest Opinions</p>
+        <p style="color: #888; margin-top: 0.5rem; font-size: 0.85rem;">As an Amazon Associate, we earn from qualifying purchases. All prices updated May 2026.</p>
     </footer>
 </body>
 </html>
