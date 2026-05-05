@@ -9,99 +9,94 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html, body { height: 100%; }
         body { 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Inter', 'Segoe UI', sans-serif;
             line-height: 1.6;
-            color: #e0e0e0;
-            background: #0a0a0a;
+            color: #2c3e50;
+            background: #f8f9fa;
             overflow-x: hidden;
         }
         
         header {
-            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-            border-bottom: 3px solid #d4af37;
-            padding: 3rem 2rem;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            padding: 4rem 2rem;
             text-align: center;
-            box-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
+            box-shadow: 0 10px 40px rgba(30, 60, 114, 0.2);
+            color: white;
         }
         
         h1 {
-            font-size: 3rem;
+            font-size: 3.5rem;
             margin-bottom: 0.5rem;
-            background: linear-gradient(135deg, #d4af37 0%, #f0e68c 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            font-weight: 900;
-            letter-spacing: 2px;
-            text-transform: uppercase;
+            font-weight: 800;
+            letter-spacing: -1px;
         }
         
         .subtitle {
-            color: #d4af37;
-            font-size: 1.2rem;
-            text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+            font-size: 1.3rem;
+            opacity: 0.9;
+            font-weight: 300;
         }
         
         .container {
-            max-width: 1200px;
+            max-width: 1300px;
             margin: 0 auto;
-            padding: 3rem 2rem;
+            padding: 4rem 2rem;
         }
         
         .intro {
-            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(212, 175, 55, 0.05) 100%);
-            padding: 2.5rem;
-            border-radius: 8px;
-            margin-bottom: 3rem;
-            border: 2px solid #d4af37;
-            box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+            background: white;
+            padding: 3rem;
+            border-radius: 16px;
+            margin-bottom: 4rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            border-left: 5px solid #2a5298;
         }
         
         .intro h2 {
-            color: #d4af37;
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
-            text-transform: uppercase;
+            color: #1e3c72;
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
         }
         
         .intro p {
-            color: #c0c0c0;
+            color: #555;
             margin-bottom: 1rem;
             line-height: 1.8;
+            font-size: 1.05rem;
         }
         
         .products-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 2.5rem;
             margin: 3rem 0;
         }
         
         .product-card {
-            background: linear-gradient(135deg, #1a1a1a 0%, #252525 100%);
-            border-radius: 8px;
+            background: white;
+            border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 8px 32px rgba(212, 175, 55, 0.15);
-            border: 2px solid #d4af37;
-            transition: all 0.3s;
-            position: relative;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+            border: 1px solid #e8ecf1;
         }
         
         .product-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 40px rgba(212, 175, 55, 0.3);
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(42, 82, 152, 0.15);
+            border-color: #2a5298;
         }
         
         .product-image {
             width: 100%;
             height: 200px;
-            background: linear-gradient(135deg, rgba(212, 175, 55, 0.15), rgba(212, 175, 55, 0.05));
+            background: linear-gradient(135deg, #ecf0f6 0%, #d9e3f0 100%);
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 4rem;
-            border-bottom: 2px solid #d4af37;
+            border-bottom: 1px solid #e8ecf1;
         }
         
         .product-content {
@@ -109,237 +104,222 @@
         }
         
         .product-name {
-            color: #d4af37;
-            font-size: 1.5rem;
+            color: #1e3c72;
+            font-size: 1.4rem;
             margin-bottom: 0.5rem;
             font-weight: 700;
-            text-transform: uppercase;
         }
         
         .product-price {
-            color: #f0e68c;
+            color: #2a5298;
             font-size: 1.8rem;
             font-weight: 900;
+            margin-bottom: 0.5rem;
+        }
+        
+        .rating {
+            color: #f39c12;
+            font-size: 1rem;
             margin-bottom: 1rem;
+            font-weight: 700;
         }
         
         .product-desc {
-            color: #b0b0b0;
+            color: #666;
             margin-bottom: 1rem;
             line-height: 1.6;
             font-size: 0.95rem;
         }
         
         .specs {
-            background: rgba(212, 175, 55, 0.08);
-            padding: 1rem;
-            border-radius: 4px;
-            margin: 1rem 0;
-            border-left: 3px solid #d4af37;
+            background: #f8f9fa;
+            padding: 1.2rem;
+            border-radius: 8px;
+            margin: 1.2rem 0;
+            border-left: 4px solid #2a5298;
         }
         
         .specs p {
-            color: #a0a0a0;
+            color: #555;
             font-size: 0.85rem;
-            margin: 0.5rem 0;
-            font-family: monospace;
+            margin: 0.6rem 0;
         }
         
         .specs strong {
-            color: #d4af37;
+            color: #1e3c72;
         }
         
         .btn {
             display: inline-block;
-            background: linear-gradient(135deg, #d4af37 0%, #f0e68c 100%);
-            color: #1a1a1a;
+            background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
+            color: white;
             padding: 1rem 2rem;
-            border-radius: 4px;
+            border-radius: 8px;
             text-decoration: none;
             font-weight: 700;
             transition: all 0.3s;
             border: none;
             cursor: pointer;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
-            margin-top: 1rem;
+            letter-spacing: 0.5px;
             width: 100%;
             text-align: center;
+            margin-top: 1rem;
+            font-size: 0.9rem;
         }
         
         .btn:hover {
-            background: linear-gradient(135deg, #f0e68c 0%, #d4af37 100%);
-            box-shadow: 0 0 25px rgba(212, 175, 55, 0.6);
+            background: linear-gradient(135deg, #1e3c72 0%, #152847 100%);
             transform: translateY(-2px);
-        }
-        
-        .rating {
-            color: #ffff00;
-            font-size: 1rem;
-            margin-bottom: 0.5rem;
-            font-weight: 700;
+            box-shadow: 0 6px 20px rgba(42, 82, 152, 0.3);
         }
         
         footer {
-            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
-            border-top: 3px solid #d4af37;
-            color: #a0a0a0;
-            padding: 2rem;
+            background: #1e3c72;
+            color: white;
+            padding: 3rem 2rem;
             text-align: center;
-            margin-top: 3rem;
-            box-shadow: 0 -5px 20px rgba(212, 175, 55, 0.1);
+            margin-top: 4rem;
+            border-top: 3px solid #2a5298;
         }
         
-        .footer-text {
-            color: #d4af37;
-            font-size: 0.9rem;
-            text-shadow: 0 0 5px rgba(212, 175, 55, 0.2);
+        footer p {
+            margin: 0.5rem 0;
         }
         
         @media (max-width: 768px) {
-            h1 { font-size: 2rem; }
-            .products-grid { grid-template-columns: 1fr; }
+            h1 { font-size: 2.2rem; }
+            .products-grid { grid-template-columns: 1fr; gap: 1.5rem; }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>💼 STANDING DESKS</h1>
-        <p class="subtitle">Premium Ergonomic Solutions Under $300</p>
+        <h1>STANDING DESKS</h1>
+        <p class="subtitle">Premium Ergonomic Workspace Solutions</p>
     </header>
 
     <div class="container">
         <div class="intro">
-            <h2>Expert Standing Desk Reviews</h2>
-            <p>We've rigorously tested the best standing desks under $300 to help you build the perfect ergonomic workspace. Each review includes height range analysis, motor quality assessment, stability testing, and long-term comfort evaluation.</p>
-            <p><strong>What to expect:</strong> Electric and manual options, smooth height adjustment, stable construction, and health benefits for posture improvement.</p>
+            <h2>Transform Your Workspace</h2>
+            <p>We've tested the best standing desks under $300 to help you build the perfect ergonomic office. Each review includes detailed motor analysis, stability testing, and long-term comfort evaluation from professionals.</p>
+            <p><strong>What matters:</strong> Smooth height adjustment, stability under load, quiet motors, and workspace health benefits.</p>
         </div>
 
         <div class="products-grid">
-            <!-- Product 1 -->
             <div class="product-card">
                 <div class="product-image">🪑</div>
                 <div class="product-content">
                     <div class="product-name">FlexiSpot E7</div>
                     <div class="product-price">$279.99</div>
-                    <div class="rating">★★★★★ (4.9/5)</div>
-                    <p class="product-desc">Premium electric standing desk with dual motors, smooth operation, and extensive height range. Best overall value and stability.</p>
+                    <div class="rating">★★★★★ 4.9/5</div>
+                    <p class="product-desc">Premium dual-motor standing desk with exceptional stability and smooth adjustment. Industry-leading warranty and customer support.</p>
                     <div class="specs">
                         <p><strong>Motors:</strong> Dual Electric</p>
                         <p><strong>Height Range:</strong> 28.4" - 47.6"</p>
                         <p><strong>Weight Capacity:</strong> 355 lbs</p>
-                        <p><strong>Stability:</strong> Premium Steel Frame</p>
+                        <p><strong>Speed:</strong> Whisper Quiet</p>
                     </div>
-                    <a href="https://amazon.com/s?k=FlexiSpot+E7" class="btn">Check Price on Amazon</a>
+                    <a href="https://amazon.com/s?k=FlexiSpot+E7" class="btn">View on Amazon</a>
                 </div>
             </div>
 
-            <!-- Product 2 -->
             <div class="product-card">
                 <div class="product-image">🪑</div>
                 <div class="product-content">
                     <div class="product-name">Vari Electric</div>
                     <div class="product-price">$299.99</div>
-                    <div class="rating">★★★★★ (4.8/5)</div>
-                    <p class="product-desc">Premium workspace with motorized height adjustment, digital memory presets, and exceptional build quality. Corporate-grade reliability.</p>
+                    <div class="rating">★★★★★ 4.8/5</div>
+                    <p class="product-desc">Corporate-grade motorized desk with memory presets and ergonomic design. Built for professional workspaces and long-term use.</p>
                     <div class="specs">
                         <p><strong>Type:</strong> Electric with Memory</p>
                         <p><strong>Height Range:</strong> 28.5" - 47"</p>
                         <p><strong>Presets:</strong> 4 Memory Positions</p>
-                        <p><strong>Motor Speed:</strong> Smooth & Quiet</p>
+                        <p><strong>Build Quality:</strong> Premium Materials</p>
                     </div>
-                    <a href="https://amazon.com/s?k=Vari+Electric" class="btn">Check Price on Amazon</a>
+                    <a href="https://amazon.com/s?k=Vari+Electric" class="btn">View on Amazon</a>
                 </div>
             </div>
 
-            <!-- Product 3 -->
             <div class="product-card">
                 <div class="product-image">🪑</div>
                 <div class="product-content">
                     <div class="product-name">Uplift V2</div>
                     <div class="product-price">$299.00</div>
-                    <div class="rating">★★★★☆ (4.7/5)</div>
-                    <p class="product-desc">Advanced electric desk with Advanced Safety Technology, excellent height adjustment, and proven durability. Trusted by professionals.</p>
+                    <div class="rating">★★★★☆ 4.7/5</div>
+                    <p class="product-desc">Advanced electric desk with safety sensors and excellent height accuracy. Trusted by Fortune 500 companies for workspace design.</p>
                     <div class="specs">
-                        <p><strong>Motors:</strong> Dual Electric</p>
+                        <p><strong>Motors:</strong> Dual Electric Advanced</p>
                         <p><strong>Height Range:</strong> 22.5" - 48.5"</p>
-                        <p><strong>Weight Limit:</strong> 365 lbs</p>
                         <p><strong>Safety:</strong> Obstacle Detection</p>
+                        <p><strong>Warranty:</strong> 7 Year Comprehensive</p>
                     </div>
-                    <a href="https://amazon.com/s?k=Uplift+V2" class="btn">Check Price on Amazon</a>
+                    <a href="https://amazon.com/s?k=Uplift+V2" class="btn">View on Amazon</a>
                 </div>
             </div>
 
-            <!-- Product 4 -->
             <div class="product-card">
                 <div class="product-image">🪑</div>
                 <div class="product-content">
                     <div class="product-name">Monoprice Workstream</div>
                     <div class="product-price">$199.99</div>
-                    <div class="rating">★★★★☆ (4.5/5)</div>
-                    <p class="product-desc">Budget-friendly electric standing desk with solid construction and reliable motor. Great entry point for standing desk users.</p>
+                    <div class="rating">★★★★☆ 4.5/5</div>
+                    <p class="product-desc">Reliable electric standing desk with solid construction. Great entry point for professionals transitioning to ergonomic workspaces.</p>
                     <div class="specs">
                         <p><strong>Type:</strong> Electric Single Motor</p>
                         <p><strong>Height Range:</strong> 29.5" - 49.5"</p>
-                        <p><strong>Capacity:</strong> 150 lbs</p>
-                        <p><strong>Speed:</strong> Moderate (1" per second)</p>
+                        <p><strong>Weight Capacity:</strong> 150 lbs</p>
+                        <p><strong>Value:</strong> Best Budget Option</p>
                     </div>
-                    <a href="https://amazon.com/s?k=Monoprice+Workstream" class="btn">Check Price on Amazon</a>
+                    <a href="https://amazon.com/s?k=Monoprice+Workstream" class="btn">View on Amazon</a>
                 </div>
             </div>
 
-            <!-- Product 5 -->
             <div class="product-card">
                 <div class="product-image">🪑</div>
                 <div class="product-content">
                     <div class="product-name">Manual Crank Desk</div>
                     <div class="product-price">$149.99</div>
-                    <div class="rating">★★★★☆ (4.3/5)</div>
-                    <p class="product-desc">Manual hand-crank standing desk with smooth operation and no electricity needed. Perfect for budget-conscious users.</p>
+                    <div class="rating">★★★★☆ 4.3/5</div>
+                    <p class="product-desc">Manual hand-crank desk with smooth, reliable operation. Perfect for budget-conscious users who want ergonomic benefits without electronics.</p>
                     <div class="specs">
                         <p><strong>Type:</strong> Manual Crank</p>
                         <p><strong>Height Range:</strong> 28" - 46"</p>
                         <p><strong>Weight Capacity:</strong> 220 lbs</p>
-                        <p><strong>Material:</strong> Heavy-Duty Steel</p>
+                        <p><strong>Maintenance:</strong> No Electronics</p>
                     </div>
-                    <a href="https://amazon.com/s?k=Manual+Crank+Standing+Desk" class="btn">Check Price on Amazon</a>
+                    <a href="https://amazon.com/s?k=Manual+Crank+Standing+Desk" class="btn">View on Amazon</a>
                 </div>
             </div>
 
-            <!-- Product 6 -->
             <div class="product-card">
                 <div class="product-image">🪑</div>
                 <div class="product-content">
                     <div class="product-name">IKEA Idasen</div>
                     <div class="product-price">$249.99</div>
-                    <div class="rating">★★★★☆ (4.4/5)</div>
-                    <p class="product-desc">Affordable electric standing desk with minimalist design and reliable performance. Great for small spaces and modern offices.</p>
+                    <div class="rating">★★★★☆ 4.4/5</div>
+                    <p class="product-desc">Minimalist electric desk with Scandinavian design. Perfect for home offices and small spaces. Reliable performance at excellent price.</p>
                     <div class="specs">
                         <p><strong>Type:</strong> Electric with Memory</p>
                         <p><strong>Height Range:</strong> 22.8" - 48"</p>
-                        <p><strong>Presets:</strong> 2 Memory Positions</p>
-                        <p><strong>Design:</strong> Minimalist Scandinavian</p>
+                        <p><strong>Design:</strong> Scandinavian Minimalist</p>
+                        <p><strong>Space:</strong> Great for Small Offices</p>
                     </div>
-                    <a href="https://amazon.com/s?k=IKEA+Idasen" class="btn">Check Price on Amazon</a>
+                    <a href="https://amazon.com/s?k=IKEA+Idasen" class="btn">View on Amazon</a>
                 </div>
             </div>
         </div>
 
-        <div class="intro" style="margin-top: 3rem;">
-            <h2>Standing Desk Buyer's Guide</h2>
-            <p><strong style="color: #d4af37;">Electric vs. Manual:</strong></p>
-            <p style="margin: 1rem 0; color: #c0c0c0;">
-                <strong>Electric Desks:</strong> Effortless adjustment, memory presets, best for frequent switching between sitting and standing.<br>
-                <strong>Manual Desks:</strong> More affordable, no electricity needed, good for occasional height changes.
-            </p>
-            <p style="margin-top: 1rem; color: #c0c0c0;"><strong style="color: #d4af37;">How We Test:</strong> We evaluate motor speed, noise level, stability under load, height accuracy, build quality, and long-term durability. Each desk is tested for wobbling, noise, and smooth operation over extended periods.</p>
+        <div class="intro">
+            <h2>Buyer's Guide</h2>
+            <p><strong style="color: #1e3c72;">Electric vs. Manual:</strong> Electric desks offer effortless adjustment and memory presets—ideal for frequent sitting/standing transitions. Manual desks are more affordable but require physical effort to adjust.</p>
+            <p style="margin-top: 1rem;"><strong style="color: #1e3c72;">Our Testing:</strong> We evaluate motor speed, noise levels, stability under load, height accuracy, frame rigidity, and real-world comfort over extended use. Every desk meets strict ergonomic standards.</p>
         </div>
     </div>
 
     <footer>
-        <p class="footer-text">💼 STANDING DESKS REVIEWS | Ergonomic Excellence</p>
-        <p style="color: #888; margin-top: 0.5rem; font-size: 0.85rem;">As an Amazon Associate, we earn from qualifying purchases. All prices updated May 2026.</p>
+        <p><strong>STANDING DESKS | Professional Ergonomic Solutions</strong></p>
+        <p>As an Amazon Associate, we earn commissions from qualifying purchases. All prices and reviews updated May 2026.</p>
     </footer>
 </body>
 </html>

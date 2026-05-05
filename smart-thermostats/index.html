@@ -3,137 +3,359 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Best Smart Thermostats Under $150 | Premium Energy-Saving Reviews</title>
-    <meta name="description" content="Expert reviews of WiFi smart thermostats with learning AI and energy tracking. Compatibility analysis and annual savings breakdown.">
+    <title>Best Smart Thermostats Under $150 | Energy-Saving Reviews</title>
+    <meta name="description" content="Expert reviews of WiFi smart thermostats with learning AI and energy tracking. Savings analysis, compatibility testing, and installation guides.">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #e0e0e0; background: #0a0a0a; }
-        header { background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); border-bottom: 3px solid #d4af37; padding: 3rem 2rem; text-align: center; box-shadow: 0 0 30px rgba(212, 175, 55, 0.3); }
-        h1 { font-size: 3rem; background: linear-gradient(135deg, #d4af37 0%, #f0e68c 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 0.5rem; }
-        .subtitle { color: #d4af37; font-size: 1.2rem; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 3rem 2rem; }
-        .intro { background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(212, 175, 55, 0.05) 100%); padding: 2.5rem; border-radius: 8px; margin-bottom: 3rem; border: 2px solid #d4af37; }
-        .intro h2 { color: #d4af37; font-size: 2rem; margin-bottom: 1rem; text-transform: uppercase; }
-        .intro p { color: #c0c0c0; margin-bottom: 1rem; }
-        .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin: 3rem 0; }
-        .product-card { background: linear-gradient(135deg, #1a1a1a 0%, #252525 100%); border-radius: 8px; border: 2px solid #d4af37; padding: 2rem; transition: all 0.3s; }
-        .product-card:hover { transform: translateY(-5px); box-shadow: 0 12px 40px rgba(212, 175, 55, 0.3); }
-        .product-name { color: #d4af37; font-size: 1.5rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.5rem; }
-        .product-price { color: #f0e68c; font-size: 1.8rem; font-weight: 900; margin-bottom: 1rem; }
-        .rating { color: #ffff00; margin-bottom: 0.5rem; font-weight: 700; }
-        .product-desc { color: #b0b0b0; margin-bottom: 1rem; }
-        .specs { background: rgba(212, 175, 55, 0.08); padding: 1rem; border-radius: 4px; margin: 1rem 0; border-left: 3px solid #d4af37; }
-        .specs p { color: #a0a0a0; font-size: 0.85rem; margin: 0.5rem 0; }
-        .specs strong { color: #d4af37; }
-        .btn { display: inline-block; background: linear-gradient(135deg, #d4af37 0%, #f0e68c 100%); color: #1a1a1a; padding: 1rem 2rem; border-radius: 4px; text-decoration: none; font-weight: 700; width: 100%; text-align: center; text-transform: uppercase; cursor: pointer; transition: all 0.3s; margin-top: 1rem; }
-        .btn:hover { background: linear-gradient(135deg, #f0e68c 0%, #d4af37 100%); transform: translateY(-2px); }
-        footer { background: #0a0a0a; border-top: 3px solid #d4af37; color: #a0a0a0; padding: 2rem; text-align: center; }
-        .footer-text { color: #d4af37; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f0f8f4;
+            overflow-x: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 100%);
+            padding: 4rem 2rem;
+            text-align: center;
+            box-shadow: 0 4px 30px rgba(27, 94, 32, 0.2);
+        }
+        
+        h1 {
+            font-size: 3.2rem;
+            margin-bottom: 0.5rem;
+            color: white;
+            font-weight: 900;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        
+        .subtitle {
+            color: #c8e6c9;
+            font-size: 1.2rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        
+        .intro {
+            background: white;
+            padding: 3rem;
+            border-radius: 12px;
+            margin-bottom: 4rem;
+            box-shadow: 0 2px 16px rgba(27, 94, 32, 0.1);
+            border-left: 5px solid #2e7d32;
+        }
+        
+        .intro h2 {
+            color: #1b5e20;
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .intro p {
+            color: #555;
+            margin-bottom: 1rem;
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+        
+        .savings-highlight {
+            background: #e8f5e9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            border-left: 4px solid #4caf50;
+        }
+        
+        .savings-highlight strong {
+            color: #1b5e20;
+            font-size: 1.15rem;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 2.5rem;
+            margin: 3rem 0;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 12px rgba(27, 94, 32, 0.08);
+            border: 1px solid #e0f2f1;
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+        }
+        
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(46, 125, 50, 0.15);
+            border-color: #2e7d32;
+        }
+        
+        .product-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            border-bottom: 1px solid #e0f2f1;
+        }
+        
+        .product-content {
+            padding: 2rem;
+        }
+        
+        .product-name {
+            color: #1b5e20;
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .product-price {
+            color: #2e7d32;
+            font-size: 1.8rem;
+            font-weight: 900;
+            margin-bottom: 0.5rem;
+        }
+        
+        .rating {
+            color: #f39c12;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .product-desc {
+            color: #666;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        
+        .specs {
+            background: #f1f8f6;
+            padding: 1.2rem;
+            border-radius: 8px;
+            margin: 1.2rem 0;
+            border-left: 4px solid #4caf50;
+        }
+        
+        .specs p {
+            color: #555;
+            font-size: 0.85rem;
+            margin: 0.6rem 0;
+        }
+        
+        .specs strong {
+            color: #1b5e20;
+        }
+        
+        .savings-badge {
+            background: #c8e6c9;
+            color: #1b5e20;
+            padding: 0.5rem 0.8rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin: 0.5rem 0;
+            display: inline-block;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #2e7d32 0%, #1b5e20 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            width: 100%;
+            text-align: center;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+        
+        .btn:hover {
+            background: linear-gradient(135deg, #1b5e20 0%, #0d3817 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(46, 125, 50, 0.3);
+        }
+        
+        footer {
+            background: #1b5e20;
+            color: #c8e6c9;
+            padding: 3rem 2rem;
+            text-align: center;
+            margin-top: 4rem;
+            border-top: 3px solid #2e7d32;
+        }
+        
+        footer p {
+            margin: 0.5rem 0;
+        }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 2.2rem; }
+            .products-grid { grid-template-columns: 1fr; }
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>🌡️ SMART THERMOSTATS</h1>
-        <p class="subtitle">Premium Energy-Saving Climate Control Under $150</p>
+        <p class="subtitle">Energy-Saving Climate Control Solutions</p>
     </header>
+
     <div class="container">
         <div class="intro">
-            <h2>Smart Thermostat Expert Reviews</h2>
-            <p>We test WiFi-enabled thermostats with learning AI and energy tracking features. Real savings data, compatibility analysis, and installation difficulty ratings.</p>
-            <p style="margin-top: 1rem;"><strong style="color: #d4af37;">Potential Savings:</strong> Average household saves $120-180 per year on heating/cooling with a smart thermostat.</p>
+            <h2>Smart Climate Control for Your Home</h2>
+            <p>We test WiFi-enabled thermostats with learning AI technology. Real savings data, compatibility analysis, and installation difficulty ratings from our expert team.</p>
+            <div class="savings-highlight">
+                <strong>Potential Savings: $120-180 per year</strong><br>
+                Most smart thermostats pay for themselves in 1-2 years through energy savings alone.
+            </div>
         </div>
+
         <div class="products-grid">
             <div class="product-card">
-                <div class="product-name">Nest Learning Thermostat</div>
-                <div class="product-price">$129.99</div>
-                <div class="rating">★★★★★ (4.8/5)</div>
-                <p class="product-desc">Industry-leading smart thermostat with learning AI. Automatically adjusts temperature based on your schedule. Premium design and app control.</p>
-                <div class="specs">
-                    <p><strong>Learning AI:</strong> Yes - Auto-Adjusting</p>
-                    <p><strong>App Control:</strong> Full Remote</p>
-                    <p><strong>Energy Reports:</strong> Detailed Usage Data</p>
-                    <p><strong>Avg Savings:</strong> $131-145/Year</p>
+                <div class="product-image">🌡️</div>
+                <div class="product-content">
+                    <div class="product-name">Nest Learning Thermostat</div>
+                    <div class="product-price">$129.99</div>
+                    <div class="rating">★★★★★ 4.8/5</div>
+                    <p class="product-desc">Industry-leading smart thermostat with learning AI. Automatically adjusts temperature based on your schedule. Premium design with full app control.</p>
+                    <div class="specs">
+                        <p><strong>Learning AI:</strong> Yes - Auto-Adjusting</p>
+                        <p><strong>App Control:</strong> Full Remote Access</p>
+                        <p><strong>Energy Reports:</strong> Detailed Usage</p>
+                        <p><strong>Avg Savings:</strong> $131-145/Year</p>
+                    </div>
+                    <div class="savings-badge">Saves $131-145/Year</div>
+                    <a href="https://amazon.com/s?k=Nest+Learning+Thermostat" class="btn">View on Amazon</a>
                 </div>
-                <a href="https://amazon.com/s?k=Nest+Learning+Thermostat" class="btn">Check Price</a>
             </div>
+
             <div class="product-card">
-                <div class="product-name">Ecobee SmartThermostat</div>
-                <div class="product-price">$99.99</div>
-                <div class="rating">★★★★★ (4.7/5)</div>
-                <p class="product-desc">Premium smart thermostat with built-in voice control. Works with Alexa. Voice activation and smart room sensors included.</p>
-                <div class="specs">
-                    <p><strong>Voice Control:</strong> Built-In Alexa</p>
-                    <p><strong>Remote Sensors:</strong> Included</p>
-                    <p><strong>Smart Home:</strong> Full Integration</p>
-                    <p><strong>Avg Savings:</strong> $130-170/Year</p>
+                <div class="product-image">🌡️</div>
+                <div class="product-content">
+                    <div class="product-name">Ecobee SmartThermostat</div>
+                    <div class="product-price">$99.99</div>
+                    <div class="rating">★★★★★ 4.7/5</div>
+                    <p class="product-desc">Premium smart thermostat with built-in Alexa voice control. Remote sensors included for multi-room temperature balance.</p>
+                    <div class="specs">
+                        <p><strong>Voice Control:</strong> Built-In Alexa</p>
+                        <p><strong>Remote Sensors:</strong> Included</p>
+                        <p><strong>Smart Home:</strong> Full Integration</p>
+                        <p><strong>Avg Savings:</strong> $130-170/Year</p>
+                    </div>
+                    <div class="savings-badge">Saves $130-170/Year</div>
+                    <a href="https://amazon.com/s?k=Ecobee+SmartThermostat" class="btn">View on Amazon</a>
                 </div>
-                <a href="https://amazon.com/s?k=Ecobee+SmartThermostat" class="btn">Check Price</a>
             </div>
+
             <div class="product-card">
-                <div class="product-name">Honeywell Home T9</div>
-                <div class="product-price">$129.99</div>
-                <div class="rating">★★★★☆ (4.6/5)</div>
-                <p class="product-desc">Premium smart thermostat with room sensors and geofencing. Tracks humidity and air quality. Excellent compatibility with most HVAC systems.</p>
-                <div class="specs">
-                    <p><strong>Sensors:</strong> Room Temp + Humidity</p>
-                    <p><strong>Geofencing:</strong> Auto Home/Away</p>
-                    <p><strong>Compatibility:</strong> Most HVAC</p>
-                    <p><strong>Avg Savings:</strong> $120-150/Year</p>
+                <div class="product-image">🌡️</div>
+                <div class="product-content">
+                    <div class="product-name">Honeywell Home T9</div>
+                    <div class="product-price">$129.99</div>
+                    <div class="rating">★★★★☆ 4.6/5</div>
+                    <p class="product-desc">Premium thermostat with room sensors and geofencing. Tracks humidity and air quality. Excellent HVAC system compatibility.</p>
+                    <div class="specs">
+                        <p><strong>Sensors:</strong> Room Temp + Humidity</p>
+                        <p><strong>Geofencing:</strong> Auto Home/Away</p>
+                        <p><strong>Compatibility:</strong> Most HVAC</p>
+                        <p><strong>Avg Savings:</strong> $120-150/Year</p>
+                    </div>
+                    <div class="savings-badge">Saves $120-150/Year</div>
+                    <a href="https://amazon.com/s?k=Honeywell+Home+T9" class="btn">View on Amazon</a>
                 </div>
-                <a href="https://amazon.com/s?k=Honeywell+Home+T9" class="btn">Check Price</a>
             </div>
+
             <div class="product-card">
-                <div class="product-name">Wyze Thermostat</div>
-                <div class="product-price">$49.99</div>
-                <div class="rating">★★★★☆ (4.4/5)</div>
-                <p class="product-desc">Budget-friendly smart thermostat with remote app control. No monthly subscription. Simple installation and excellent value for basic smart control.</p>
-                <div class="specs">
-                    <p><strong>Price:</strong> Ultra-Budget Friendly</p>
-                    <p><strong>Subscription:</strong> None Required</p>
-                    <p><strong>App Control:</strong> Basic but Functional</p>
-                    <p><strong>Avg Savings:</strong> $100-120/Year</p>
+                <div class="product-image">🌡️</div>
+                <div class="product-content">
+                    <div class="product-name">Wyze Thermostat</div>
+                    <div class="product-price">$49.99</div>
+                    <div class="rating">★★★★☆ 4.4/5</div>
+                    <p class="product-desc">Budget-friendly smart thermostat with remote app control. No monthly subscription required. Simple installation with solid reliability.</p>
+                    <div class="specs">
+                        <p><strong>Price:</strong> Budget-Friendly</p>
+                        <p><strong>Subscription:</strong> None Required</p>
+                        <p><strong>App Control:</strong> Basic Access</p>
+                        <p><strong>Avg Savings:</strong> $100-120/Year</p>
+                    </div>
+                    <div class="savings-badge">Saves $100-120/Year</div>
+                    <a href="https://amazon.com/s?k=Wyze+Thermostat" class="btn">View on Amazon</a>
                 </div>
-                <a href="https://amazon.com/s?k=Wyze+Thermostat" class="btn">Check Price</a>
             </div>
+
             <div class="product-card">
-                <div class="product-name">Emerson Sensi Touch</div>
-                <div class="product-price">$119.00</div>
-                <div class="rating">★★★★★ (4.5/5)</div>
-                <p class="product-desc">Premium touchscreen smart thermostat with HomeKit support. Beautiful design, smooth interface, excellent for Apple users.</p>
-                <div class="specs">
-                    <p><strong>Display:</strong> Touchscreen</p>
-                    <p><strong>Smart Home:</strong> Apple HomeKit</p>
-                    <p><strong>Schedule:</strong> Custom Scheduling</p>
-                    <p><strong>Avg Savings:</strong> $140-160/Year</p>
+                <div class="product-image">🌡️</div>
+                <div class="product-content">
+                    <div class="product-name">Emerson Sensi Touch</div>
+                    <div class="product-price">$119.00</div>
+                    <div class="rating">★★★★★ 4.5/5</div>
+                    <p class="product-desc">Premium touchscreen thermostat with Apple HomeKit support. Beautiful interface with excellent smart home integration.</p>
+                    <div class="specs">
+                        <p><strong>Display:</strong> Color Touchscreen</p>
+                        <p><strong>Smart Home:</strong> Apple HomeKit</p>
+                        <p><strong>Scheduling:</strong> Custom Advanced</p>
+                        <p><strong>Avg Savings:</strong> $140-160/Year</p>
+                    </div>
+                    <div class="savings-badge">Saves $140-160/Year</div>
+                    <a href="https://amazon.com/s?k=Emerson+Sensi+Touch" class="btn">View on Amazon</a>
                 </div>
-                <a href="https://amazon.com/s?k=Emerson+Sensi+Touch" class="btn">Check Price</a>
             </div>
+
             <div class="product-card">
-                <div class="product-name">Carrier Cor Thermostat</div>
-                <div class="product-price">$149.99</div>
-                <div class="rating">★★★★☆ (4.3/5)</div>
-                <p class="product-desc">Premium WiFi thermostat designed for newer homes. Touchscreen display, advanced scheduling, excellent sensor accuracy and reliability.</p>
-                <div class="specs">
-                    <p><strong>Compatibility:</strong> Modern HVAC Systems</p>
-                    <p><strong>Display:</strong> Touchscreen</p>
-                    <p><strong>Smart Scheduling:</strong> Advanced</p>
-                    <p><strong>Avg Savings:</strong> $135-155/Year</p>
+                <div class="product-image">🌡️</div>
+                <div class="product-content">
+                    <div class="product-name">Carrier Cor Thermostat</div>
+                    <div class="product-price">$149.99</div>
+                    <div class="rating">★★★★☆ 4.3/5</div>
+                    <p class="product-desc">Premium WiFi thermostat for modern homes. Touchscreen display, advanced scheduling, and excellent sensor accuracy.</p>
+                    <div class="specs">
+                        <p><strong>Compatibility:</strong> Modern HVAC</p>
+                        <p><strong>Display:</strong> Touchscreen</p>
+                        <p><strong>Scheduling:</strong> Advanced Modes</p>
+                        <p><strong>Avg Savings:</strong> $135-155/Year</p>
+                    </div>
+                    <div class="savings-badge">Saves $135-155/Year</div>
+                    <a href="https://amazon.com/s?k=Carrier+Cor+Thermostat" class="btn">View on Amazon</a>
                 </div>
-                <a href="https://amazon.com/s?k=Carrier+Cor+Thermostat" class="btn">Check Price</a>
             </div>
         </div>
-        <div class="intro" style="margin-top: 3rem;">
-            <h2>Smart Thermostat Savings Calculator</h2>
-            <p><strong style="color: #d4af37;">Typical Home Savings:</strong></p>
-            <p style="margin: 0.5rem 0; color: #c0c0c0;">Average US household: <strong>$120-180 per year</strong></p>
-            <p style="margin: 0.5rem 0; color: #c0c0c0;">Cold climate homes (heating): <strong>$150-250 per year</strong></p>
-            <p style="margin: 0.5rem 0; color: #c0c0c0;">Hot climate homes (cooling): <strong>$100-180 per year</strong></p>
-            <p style="margin-top: 1.5rem; color: #c0c0c0;"><strong style="color: #d4af37;">ROI Breakdown:</strong> Most smart thermostats pay for themselves in 1-2 years through energy savings alone.</p>
+
+        <div class="intro" style="margin-top: 4rem;">
+            <h2>Savings Calculator</h2>
+            <p><strong style="color: #1b5e20;">Real Savings Data:</strong></p>
+            <p>Average US household: <strong>$120-180 per year</strong></p>
+            <p>Cold climate (heating focus): <strong>$150-250 per year</strong></p>
+            <p>Hot climate (cooling focus): <strong>$100-180 per year</strong></p>
+            <p style="margin-top: 1.5rem;"><strong style="color: #1b5e20;">ROI Timeline:</strong> Most smart thermostats pay for themselves in 1-2 years. After that, pure savings.</p>
         </div>
     </div>
+
     <footer>
-        <p class="footer-text">🌡️ SMART THERMOSTATS | Energy Savings + Smart Home Control</p>
-        <p style="color: #888; margin-top: 0.5rem; font-size: 0.85rem;">As an Amazon Associate, we earn from qualifying purchases. All prices updated May 2026.</p>
+        <p><strong>🌡️ SMART THERMOSTATS | Energy Savings + Smart Home Control</strong></p>
+        <p>As an Amazon Associate, we earn from qualifying purchases. All prices updated May 2026.</p>
     </footer>
 </body>
 </html>
