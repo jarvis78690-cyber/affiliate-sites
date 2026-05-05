@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jarvis78690-cyber.github.io/affiliate-sites/sitemap.xml
